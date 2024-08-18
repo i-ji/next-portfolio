@@ -32,7 +32,7 @@ const Header = () => {
               <FcMenu />
             </div>
           </SheetTrigger>
-          <SheetContent className=" bg-white/95">
+          <SheetContent className="bg-white/95">
             <SheetHeader>
               <nav>
                 <ul>

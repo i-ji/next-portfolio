@@ -4,15 +4,7 @@ import Header from "../components/Header";
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
 const About = () => {
   const tl = gsap.timeline();
@@ -81,7 +73,7 @@ const About = () => {
                 </TableRow>
                 <TableRow>
                   <TableCell className="bg-gray-200">趣味</TableCell>
-                  <TableCell>マラソン</TableCell>
+                  <TableCell>マラソン/アニメ鑑賞</TableCell>
                   <TableCell className="bg-gray-200">特技</TableCell>
                   <TableCell>webアプリ制作</TableCell>
                 </TableRow>
@@ -95,13 +87,13 @@ const About = () => {
                   <TableCell className="bg-gray-200">好きなスポーツ</TableCell>
                   <TableCell>マラソン/駅伝/野球</TableCell>
                   <TableCell className="bg-gray-200">好きな動物</TableCell>
-                  <TableCell>猫/うさぎ</TableCell>
+                  <TableCell>猫</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="bg-gray-200">好きな漫画</TableCell>
                   <TableCell>ONE PIECE</TableCell>
                   <TableCell className="bg-gray-200">好きな本</TableCell>
-                  <TableCell>告白 - 湊かなえ</TableCell>
+                  <TableCell>もものかんづめ - さくらももこ</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="bg-gray-200">好きな映画</TableCell>
@@ -130,26 +122,20 @@ const About = () => {
                 <TableRow>
                   <TableCell className="bg-gray-200">得意料理</TableCell>
                   <TableCell>焼きうどん</TableCell>
-                  <TableCell className="bg-gray-200">日課</TableCell>
-                  <TableCell>体幹トレーニング</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="bg-gray-200">休日の過ごし方</TableCell>
-                  <TableCell>走って食べてプログラミングして寝る</TableCell>
                   <TableCell className="bg-gray-200">
-                    行ってみたい場所
+                    最近ハマっていること
                   </TableCell>
-                  <TableCell>パリ</TableCell>
+                  <TableCell>怪談/ホラー映画鑑賞</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="bg-gray-200">宝物</TableCell>
                   <TableCell>京都マラソン2024の完走メダル</TableCell>
                   <TableCell className="bg-gray-200">今欲しいもの</TableCell>
-                  <TableCell>ヴェイパーフライ</TableCell>
+                  <TableCell>原付2種</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="bg-gray-200">尊敬する人</TableCell>
-                  <TableCell>アーサー・リディアード</TableCell>
+                  <TableCell>たむじょー</TableCell>
                   <TableCell className="bg-gray-200">座右の銘</TableCell>
                   <TableCell>為せば成る</TableCell>
                 </TableRow>
@@ -165,7 +151,7 @@ const About = () => {
                 </TableRow>
                 <TableRow>
                   <TableCell className="bg-gray-200">今興味あること</TableCell>
-                  <TableCell>生成AI/トレイル</TableCell>
+                  <TableCell>エッセイ/トレイル</TableCell>
                   <TableCell className="bg-gray-200">将来の目標</TableCell>
                   <TableCell>fire</TableCell>
                 </TableRow>

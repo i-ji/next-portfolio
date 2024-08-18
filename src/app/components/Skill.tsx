@@ -2,14 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import Header from "../components/Header";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { gsap } from "gsap";
 
 const Skill = () => {

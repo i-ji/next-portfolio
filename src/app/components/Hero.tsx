@@ -10,8 +10,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 const Hero = () => {
@@ -61,19 +59,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="w-screen h-screen" id="hero">
+    <div className="w-screen h-screen overflow-hidden" id="hero">
       <div className="w-screen h-screen relative " id="inner">
         <div className="-translate-y-52" id="header">
           <Header />
         </div>
-        {/* <h1
-          className="font-bold tracking-widest text-white absolute text-3xl right-[calc(50%_-_138px)] 
-          sm:text-4xl sm:right-[calc(50%_-_166px)] top-1/2 opacity-0 -translate-y-52"
-          // className="font-bold tracking-widest text-3xl fixed top-1/2 right-[calc(50%_-_139px)] opacity-0 -translate-y-52 text-white"
-          id="title"
-        >
-          {title}
-        </h1> */}
         <Carousel
           id="title"
           className="font-bold tracking-widest text-white absolute text-3xl right-[calc(50%_-_324px)] 
@@ -117,8 +107,6 @@ const Hero = () => {
               </Link>
             </CarouselItem>
           </CarouselContent>
-          {/* <CarouselPrevious />
-          <CarouselNext /> */}
         </Carousel>
       </div>
     </div>
