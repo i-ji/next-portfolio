@@ -1,5 +1,5 @@
 import React from "react";
-import Skill from "../components/Skill";
+import Skill from "../features/skill/Skill";
 
 export async function generateMetadata() {
   return {
@@ -8,11 +8,7 @@ export async function generateMetadata() {
 }
 
 const page = () => {
-  return (
-    <div>
-      <Skill />
-    </div>
-  );
+  return <Skill />;
 };
 
 export default page;

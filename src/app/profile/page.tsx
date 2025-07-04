@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../components/Profile";
+import Profile from "../features/profile/Profile";
 
 export async function generateMetadata() {
   return {
@@ -8,11 +8,7 @@ export async function generateMetadata() {
 }
 
 const page = () => {
-  return (
-    <div>
-      <Profile />
-    </div>
-  );
+  return <Profile />;
 };
 
 export default page;

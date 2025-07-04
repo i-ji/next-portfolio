@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../components/About";
+import About from "../features/about/About";
 
 export async function generateMetadata() {
   return {
@@ -8,11 +8,7 @@ export async function generateMetadata() {
 }
 
 const page = () => {
-  return (
-    <div>
-      <About />
-    </div>
-  );
+  return <About />;
 };
 
 export default page;

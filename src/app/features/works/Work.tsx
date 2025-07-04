@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -12,6 +11,7 @@ import {
 import { FaGithub } from "react-icons/fa";
 
 interface WorkType {
+  id: string;
   img: string;
   url: string;
   title: string;
@@ -20,14 +20,14 @@ interface WorkType {
   gitHubUrl: string;
 }
 
-const Work = ({ img, url, title, skill, desc, gitHubUrl }: WorkType) => {
+const Work = ({ id, img, url, title, skill, desc, gitHubUrl }: WorkType) => {
   return (
-    <div className="w-full md:w-[49%] mb-2" id={img}>
+    <div className="w-full md:w-[49%] mb-2" id={id}>
       <Dialog>
         <div className="text-center">
           <DialogTrigger>
             <Image
-              src={`/img/${img}.jpeg`}
+              src={`/img/${img}`}
               alt={title}
               width={360}
               height={360}
@@ -39,7 +39,7 @@ const Work = ({ img, url, title, skill, desc, gitHubUrl }: WorkType) => {
           <DialogHeader>
             <Link href={url} target="_blank">
               <Image
-                src={`/img/${img}.jpeg`}
+                src={`/img/${img}`}
                 alt={title}
                 width={360}
                 height={360}

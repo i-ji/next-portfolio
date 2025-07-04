@@ -1,5 +1,4 @@
-import React from "react";
-import Contact from "../components/Contact";
+import Contact from "../features/contact/Contact";
 
 export async function generateMetadata() {
   return {
@@ -8,11 +7,7 @@ export async function generateMetadata() {
 }
 
 const page = () => {
-  return (
-    <div>
-      <Contact />
-    </div>
-  );
+  return <Contact />;
 };
 
 export default page;
